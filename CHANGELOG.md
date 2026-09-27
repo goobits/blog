@@ -7,14 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Responsive AVIF and WebP cover metadata for Blog cards and posts.
+
 ### Changed
 
-- Markdown image dimensions are now supplied through the optional synchronous
-  `resolveImageDimensions` host callback.
+- Blog presentation honors consumer-provided image sizing while retaining safe
+  component defaults.
+- Development dependencies and the standalone pnpm toolchain are current.
 
 ### Security
 
-- Removed the vulnerable `image-size` parser from the runtime and lockfile.
+- Markdown image dimensions use the optional synchronous `resolveImageDimensions`
+  host callback instead of the vulnerable `image-size` parser.
 
 ## [3.1.0] - 2026-08-16
 
